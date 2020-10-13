@@ -1,0 +1,23 @@
+.day-picker {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background: #1b1b1b;
+    padding: 5px;
+
+    .day {
+        cursor: pointer;
+
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+
+        &.selected {
+            color: #87d087;
+
+            &:before {
+                content: '> '
+            }
+        }
+    }
+}

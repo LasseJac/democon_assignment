@@ -1,0 +1,36 @@
+.details {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+
+    .talk {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 50%;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+            align-items: flex-start;
+            max-width: none;
+        }
+    }
+
+    .close {
+        padding: 1em;
+        font-size: 1.2em;
+        width: 100%;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+    }
+}

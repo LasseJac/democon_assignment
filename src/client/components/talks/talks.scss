@@ -1,0 +1,22 @@
+.talks {
+    min-width: 50%;
+
+    .time-block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+
+        .talk {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+}
